@@ -54,7 +54,8 @@
 aside {
   view-transition-name: sidebar;
 }
-*/ html[data-turbo-visit-direction="forward"]::view-transition-new(sidebar) {
+
+html[data-turbo-visit-direction="forward"]::view-transition-new(sidebar) {
   animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-in,
     210ms cubic-bezier(0.4, 0, 0.2, 1) both slide-up;
 }
